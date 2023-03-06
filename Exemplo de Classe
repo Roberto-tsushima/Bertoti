@@ -1,0 +1,37 @@
+Classe "Produto"
+Atributos:
+
+nome (string)
+preço (float)
+quantidade em estoque (inteiro)
+lista de matérias-primas (lista de objetos da classe Matéria-prima)
+Métodos:
+
+adicionar_matéria_prima(matéria_prima): adiciona uma matéria-prima necessária para produzir o produto à lista de matérias-primas do produto
+calcular_custo(): calcula o custo total de produção do produto com base no preço das matérias-primas utilizadas
+
+
+Classe "Matéria-prima"
+Atributos:
+
+nome (string)
+preço (float)
+quantidade em estoque (inteiro)
+Métodos:
+
+adicionar_quantidade(quantidade): adiciona uma quantidade de matéria-prima ao estoque
+remover_quantidade(quantidade): remove uma quantidade de matéria-prima do estoque
+atualizar_preço(novo_preço): atualiza o preço da matéria-prima
+
+
+Classe "Fábrica"
+Atributos:
+
+lista de produtos (lista de objetos da classe Produto)
+lista de matérias-primas (lista de objetos da classe Matéria-prima)
+Métodos:
+
+produzir_produto(produto): produz uma quantidade do produto especificado, utilizando as matérias-primas necessárias e atualizando os estoques
+listar_produtos(): lista todos os produtos disponíveis na fábrica, com suas quantidades em estoque
+adicionar_produto(produto): adiciona um novo produto à lista de produtos da fábrica
+remover_produto(produto): remove um produto da lista de produtos da fábrica
